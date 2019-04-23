@@ -1,0 +1,40 @@
+/*
+ * Lehrstuhl Softwaretechnologie, TU Dresden, Datei HelloLibrary.java
+ *
+ * HelloLibrary-Klasse implementiert eine Anwendung,
+ * die die Aufnahme von Büchern simuliert
+ */
+
+public class HelloLibrary {
+
+  // Simulation durch main()
+  public static void main(String[] args) {
+
+  // Erzeugung eines Library-Objektes
+      Library myLibrary = new Library();
+      
+
+  // Erzeugung von zwei Book-Objekten
+      Book book1 = new Book("Harry Potter");
+      Book book2 = new Book("Charile");
+
+
+  // Nachricht an die Library, dass die Books aufgenommen werden sollen
+      myLibrary.add(book1);
+      myLibrary.add(book2);
+      myLibrary.add(book1);
+      myLibrary.add(book2);
+      myLibrary.add(book1);
+      myLibrary.add(book2);
+      myLibrary.add(book1);
+      myLibrary.add(book2);
+      myLibrary.add(book1);
+      myLibrary.add(book2);
+      myLibrary.add(book1);
+      myLibrary.add(book2);
+
+      Book x = myLibrary.search("Harry Potter");
+      
+  }
+
+}
